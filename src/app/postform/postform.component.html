@@ -1,0 +1,34 @@
+<form [formGroup]="addPostFormGroup">
+
+    <div class="form-group">
+        <label for="name">Id</label>
+        <input type="number" class="form-control" formControlName="id" data-toggle="tooltip"
+            data-placement="right" title="Enter Id">
+       
+    </div>
+
+    <div class="form-group">
+        <label for="name">User Id</label>
+        <input type="number" class="form-control" formControlName="userId" data-toggle="tooltip"
+            data-placement="right" title="Enter UserId">
+       
+    </div>
+
+    
+    <div class="form-group">
+        <label for="name">Title</label>
+        <input type="text" class="form-control" formControlName="title" data-toggle="tooltip"
+            data-placement="right" title="Enter Title">
+       
+    </div>
+
+    <div class="form-group">
+        <label for="name">body</label>
+        <input type="text" class="form-control" formControlName="body" data-toggle="tooltip"
+            data-placement="right" title="Enter body">
+        
+    </div>
+
+    <button type="submit" (click)="submit()" class="btn btn-primary orangebtn">Submit</button>
+
+</form>

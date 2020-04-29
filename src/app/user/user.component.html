@@ -1,0 +1,23 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+Id :
+<input formControlName="id">
+
+<!-- 
+<span *ngIf="(id.dirty || id.touched) && id.invalid && id.errors.required">
+    id is required.
+  </span>
+  <span *ngIf="(id.dirty || id.touched) && id.invalid && id.errors.invalidNumber">
+    Value has to be a valid id.
+  </span> -->
+  <br />
+
+  User Id:
+  <input formControlName="userId">
+  <!-- <span *ngIf="userId.errors.required">
+    userId is required.
+  </span> -->
+  <br />
+
+  <button type="submit">Save</button>
+  <button type="reset" (click)="revert()">Revert</button>
+</form>
